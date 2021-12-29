@@ -10,11 +10,24 @@
   "scripts": {
     "prebuild": "rimraf ./dist",
     "build": "tsc --build",
-    "test": "jest tests/ --collect-coverage"
+    "test": "jest tests/ --collect-coverage",
+    "pub": "npm version patch --force && npm publish"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhupendrajoshi/dp-lister.git"
+  },
+  "keywords": [
+    "dependencies",
+    "typescript",
+    "node",
+    "angular",
+    "react",
+    "dotnetcore",
+    "dotnet"
+  ],
+  "author": "Bhupendra Joshi (https://github.com/bhupendrajoshi)",
+  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^27.0.3",
     "@types/node": "^17.0.1",
